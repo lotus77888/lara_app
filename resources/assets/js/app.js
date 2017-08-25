@@ -1,36 +1,22 @@
-  var app = angular.module("myApp", ["ngRoute"]);
-                    app.config(['$routeProvider', '$locationProvider','$qProvider',
-function($routeProvider, $locationProvider) {
-                        $routeProvider
-                        .when("/", {
-                           templateUrl: 'main.php'
-                        })
-                        .when("/london", {
-                            templateUrl : "london.php",
-                            controller : "londonCtrl"
-                        })
-                        .when("/paris", {
-                            templateUrl : "paris.php",
-                            controller : "parisCtrl"
-                        }).otherwise({
-                            redirectTo: '/'
-                          });
-                    }]);
-                    app.controller("londonCtrl", function ($scope,$http,$location) {
-                        $scope.msg = "I love London";
-                            
-                        $scope.myFunc = function() {
-                            var data = {
-                                fName: $scope.firstName,
-                                lName: $scope.lastName
-                            };
 
-                             $http.post("userinfo",data).then(function(response) {
-                                $location.path('/');
-                                      $scope.myWelcome = response.data;
-                                  });
-                        };
-                    });
-                    app.controller("parisCtrl", function ($scope) {
-                        $scope.msg = "I love Paris";
-                    });
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
+
+require('./bootstrap');
+
+window.Vue = require('vue');
+
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
+
+Vue.component('example', require('./components/Example.vue'));
+
+const app = new Vue({
+    el: '#app'
+});
