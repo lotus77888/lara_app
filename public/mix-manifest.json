@@ -1,0 +1,6 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/vendors/angular/js/angular.min.js": "/vendors/angular/js/angular.min.js",
+    "/vendors/angular-route/js/angular-route.min.js": "/vendors/angular-route/js/angular-route.min.js"
+}

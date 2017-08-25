@@ -1,0 +1,22 @@
+{
+  "name": "lara_app",
+  "description": "laravel and angular admin",
+  "main": "index.html",
+  "authors": [
+    "lotus77888 <lotus77888@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-route": "^1.6.6"
+  }
+}
