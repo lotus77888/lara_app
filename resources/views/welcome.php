@@ -63,7 +63,7 @@
                 margin-bottom: 30px;
             }
         </style>
-        <base href="/">
+        <!-- <base href="/"> -->
     </head>
    <body ng-app="myApp">
 
