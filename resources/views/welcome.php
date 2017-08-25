@@ -66,9 +66,9 @@
         <!-- <base href="/"> -->
     </head>
    <body ng-app="myApp">
-
+<h1>Hello</h1>
             <div ng-view></div>
-            
+
         <script type="text/javascript" src="vendors/angular/js/angular.min.js"></script>
         <script type="text/javascript" src="vendors/angular-route/js/angular-route.min.js"></script>
        <script type="text/javascript" src="js/app.js"></script>
